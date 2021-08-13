@@ -13,9 +13,11 @@ html, body {
     padding: 0;
     border: 0;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 section,
 footer {
