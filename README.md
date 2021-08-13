@@ -11,4 +11,4 @@
 
 # Посмотреть сайт можно тут 👇
 
-Сыллка на GitHub Pages: https://frizzproject.github.io/underhood/
+Сcылка на GitHub Pages: https://frizzproject.github.io/Underhood/
