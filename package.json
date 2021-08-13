@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "underhood project",
   "main": "index.js",
-  "homepage": "https://frizzproject.github.io/underhood",
+  "homepage": "https://frizzproject.github.io/Underhood",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gh-pages -d dist"
