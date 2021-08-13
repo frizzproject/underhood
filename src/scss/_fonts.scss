@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Tourney';
+    src: url('../fonts/Tourney-Regular.eot');
+    src: url('../fonts/Tourney-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Tourney-Regular.woff2') format('woff2'),
+        url('../fonts/Tourney-Regular.woff') format('woff'),
+        url('../fonts/Tourney-Regular.ttf') format('truetype'),
+        url('../fonts/Tourney-Regular.svg#Tourney-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tourney';
+    src: url('../fonts/Tourney-Black.eot');
+    src: url('../fonts/Tourney-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Tourney-Black.woff2') format('woff2'),
+        url('../fonts/Tourney-Black.woff') format('woff'),
+        url('../fonts/Tourney-Black.ttf') format('truetype'),
+        url('../fonts/Tourney-Black.svg#Tourney-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tourney';
+    src: url('../fonts/Tourney-BlackItalic.eot');
+    src: url('../fonts/Tourney-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Tourney-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Tourney-BlackItalic.woff') format('woff'),
+        url('../fonts/Tourney-BlackItalic.ttf') format('truetype'),
+        url('../fonts/Tourney-BlackItalic.svg#Tourney-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tourney';
+    src: url('../fonts/Tourney-Medium.eot');
+    src: url('../fonts/Tourney-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Tourney-Medium.woff2') format('woff2'),
+        url('../fonts/Tourney-Medium.woff') format('woff'),
+        url('../fonts/Tourney-Medium.ttf') format('truetype'),
+        url('../fonts/Tourney-Medium.svg#Tourney-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,301 @@
+.modal {
+    position: fixed;
+    transform: scale(0);
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 10000;
+    overflow-y: auto;
+    transition: all .3s;
+    &__title {
+        font-family: $ff;
+        font-weight: 900;
+        font-size: $h2-fz;
+        line-height: $h2-lh;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 20px;
+        @media (max-width: 1635px) {
+            $h2-fz: 48px;
+            $h2-lh: 48px;
+            font-size: $h2-fz;
+            line-height: $h2-lh;
+        }
+        @media (max-width: 900px) {
+            $h2-fz: 48px;
+            $h2-lh: 48px;
+            font-size: $h2-fz;
+            line-height: $h2-lh;
+        }
+        @media (max-width: 480px) {
+            $h2-fz: 42px;
+            $h2-lh: 42px;
+            font-size: $h2-fz;
+            line-height: $h2-lh;
+        }
+    }
+    &__text {
+        font: $text_font $ff;
+        text-align: center;
+        color: #fff;
+        @media (max-width: 1635px) {
+            $text_font: 900 22px/30px;
+            font: $text_font $ff;
+        }
+        @media (max-width: 480px) {
+            $text_font: 900 20px/28px;
+            font: $text_font $ff;
+        }
+    }
+}
+
+.modal__container {
+    max-width: 1040px;
+    width: 100%;
+    min-height: inherit;
+    flex: 1 1 auto;
+    padding: 70px 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 90px;
+    &__item {
+        position: relative;
+    }
+    @media (max-width: 1635px) {
+        margin-top: 30px;
+    }
+    @media (max-width: 480px) {
+        align-items: center;
+    }
+}
+
+.form__item-textarea {
+    max-height: 250px;
+    height: 100%;
+    margin-top: 80px;
+    @media (max-width: 480px) {
+        margin-top: 50px;
+        max-height: 150px;
+    }
+}
+
+.form__email-input {
+    background: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-weight: 900;
+    font: $text_font $ff;
+    color: #fff;
+    padding: 0 0 20px 15px;
+    &::placeholder {
+        color: #fff;
+        font-style: italic;
+        @media (max-width: 1635px) {
+            $text_font: 900 22px/30px;
+            font: $text_font $ff;
+        }
+        @media (max-width: 480px) {
+            $text_font: 900 18px/22px;
+            font: $text_font $ff;
+        }
+    }
+    @media (max-width: 1635px) {
+        padding: 0 0 10px 10px;
+        $text_font: 900 22px/30px;
+        font: $text_font $ff;
+    }
+    @media (max-width: 480px) {
+        $text_font: 900 18px/22px;
+        font: $text_font $ff;
+    }
+}
+
+.form__textarea {
+    width: 100%;
+    background: transparent;
+    border: 2px solid #fff;
+    font-weight: 900;
+    font: $text_font $ff;
+    color: #fff;
+    padding: 5px 15px 15px 15px;
+    resize: none;
+    min-height: 250px;
+    
+    &::placeholder {
+        color: #fff;
+        font-style: italic;
+        @media (max-width: 1635px) {
+            $text_font: 900 22px/30px;
+            font: $text_font $ff;
+        }
+        @media (max-width: 480px) {
+            $text_font: 900 18px/22px;
+            font: $text_font $ff;
+        }
+    }
+    @media (max-width: 1635px) {
+        $text_font: 900 22px/30px;
+        font: $text_font $ff;
+    }
+    @media (max-width: 480px) {
+        padding: 10px 10px 10px 10px;
+        $text_font: 900 18px/22px;
+        font: $text_font $ff;
+        min-height: 150px;
+    }
+}
+
+.form__textarea.js-validate-error-field {
+    border: 2px solid rgba(255, 0, 0, 0.4) !important;
+}
+.form__email-input.js-validate-error-field {
+    border: none !important;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.4) !important;
+}
+.js-validate-error-label {
+    position: absolute;
+    bottom: -20px;
+    font-family: $ff;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 900;
+    font-style: italic;
+    color: rgb(255, 0, 0);
+    opacity: 0.5;
+}
+
+.form__batton-send {
+    display: block;
+    margin-top: 80px;
+    width: 260px;
+    height: 90px;
+    border: 3px solid $btn_color;
+    background: transparent;
+    color: #fff;
+    font-family: $ff;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 20px;
+    text-align: center;
+    transition: all .3s;
+    &:hover {
+        color: #000;
+    }
+    @media (max-width: 1635px) {
+        margin-top: 50px;
+    }
+    @media (max-width: 900px) {
+        width: 220px;
+        height: 80px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+.modal__close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    &::after {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%) rotate(45deg);
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #fff;
+    }
+    &::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        transform: translate(0, -50%) rotate(-45deg);
+        width: 100%;
+        height: 2px;
+        background: #fff;
+    }
+}
+
+._open {
+    transform: scale(1);
+    visibility: visible;
+}
+
+.send__load {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    min-height: 100vh;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    background: rgba($color: #000, $alpha: 0.9);
+    transition: all .3s;
+}
+
+._sending {
+    transition: all .3s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.sendload__container {
+    max-width: 100%;
+    min-height: inherit;
+    width: 100%;
+    height: 100%;
+    flex: 1 1 auto;
+    padding: 50px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        font: $text_font $ff;
+        color: #fff;
+        width: 160px;
+        position: relative;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typeWriter 1.5s steps(15) 2s infinite backwards, blinkTextCursor 500ms steps(15) infinite normal;
+    }
+}
+
+@keyframes typeWriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 160px;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+

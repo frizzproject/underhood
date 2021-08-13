@@ -1,0 +1,31 @@
+// Import fonts
+@import 'fonts';
+// Import vars
+@import 'vars';
+// Import mixins
+@import 'mixins';
+// Import base styles
+@import 'base';
+// Import rest styles
+@import 'reset';
+
+
+// Import blocks landing
+@import 'blocks/preloader.scss';
+@import 'blocks/header.scss';
+@import 'blocks/present-section.scss';
+@import 'blocks/about-section.scss';
+@import 'blocks/experiens-section.scss';
+@import 'blocks/philosophy-section.scss';
+@import 'blocks/technologies-section.scss';
+@import 'blocks/modal-form.scss';
+@import 'blocks/footer.scss';
+
+
+// Import swiper styles
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/components/navigation/navigation.scss';
+@import '../../node_modules/swiper/components/pagination/pagination.scss';
+@import '../../node_modules/swiper/components/scrollbar/scrollbar.scss';
+
+

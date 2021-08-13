@@ -1,0 +1,124 @@
+.present-section {
+    padding: 90px 0;
+}
+
+.present__content {
+    width: inherit;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.present__title {
+    font-family: $ff;
+    font-size: $h2-fz;
+    line-height: $h2-lh;
+    color: #fff;
+    text-align: center;
+    @media (max-width: 1280px) {
+        $h2-fz: 48px;
+        $h2-lh: 48px;
+        font-size: $h2-fz;
+        line-height: $h2-lh;
+    }
+    @media (max-width: 480px) {
+        $h2-fz: 36px;
+        $h2-lh: 36px;
+        font-size: $h2-fz;
+        line-height: $h2-lh;
+    }
+}
+
+.present__text {
+    font-family: $ff;
+    font-size: $fz-bt;
+    line-height: $fz-btlh;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    @media (max-width: 1280px) {
+        $fz-bt: 28px;
+        $fz-btlh: 34px;
+        font-size: $fz-bt;
+        line-height: $fz-btlh;
+    }
+    @media (max-width: 480px) {
+        $fz-bt: 20px;
+        $fz-btlh: 28px;
+        font-size: $fz-bt;
+        line-height: $fz-btlh;
+    }
+}
+
+.btn__get {
+    font: $text_font $ff;
+    margin-top: 140px;
+    width: 320px;
+    height: 100px;
+    border: 3px solid $btn_color;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    transition: all .3s;
+    &:hover {
+        color: #000;
+    }
+    @media (max-width: 1635px) {
+        margin-top: 50px;
+    }
+    @media (max-width: 1280px) {
+        margin-top: 80px;
+        $text_font: 900 22px/30px;
+        font: $text_font $ff;
+    }
+    @media (max-width: 900px) {
+        width: 280px;
+        height: 80px;
+    }
+    @media (max-width: 375px) {
+        margin-top: 40px;
+        width: 250px;
+        height: 70px;
+        $text_font: 900 18px/20px;
+        font: $text_font $ff;
+    }
+}
+
+.scroll__icon {
+    position: absolute;
+    width: 45px;
+    height: 60px;
+    bottom: 30px;
+    left: 50%;
+    width: 45px;
+    height: 60px;
+    transform: translateX(-50%);
+    animation: moveScroll 1s ease 0s infinite normal none;
+    @media (max-width: 767px) {
+        width: 40px;
+        height: 55px;
+        bottom: 15px;
+    }
+    @media (max-width: 480px) {
+        width: 30px;
+        height: 45px;
+    }
+}
+
+@keyframes moveScroll {
+    0%{
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, 10px);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+}

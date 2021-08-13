@@ -1,0 +1,21 @@
+<div class="modal">
+    <div class="modal__close"></div>
+    <div class="modal__container">
+        <h1 class="modal__title">Contact us</h1>
+        <p class="modal__text">Email us at <span class="clr-mark">info@underhood.dev</span> or message us here</p>
+        <form class="form" action="php/mail.php" method="POST" enctype="multipart/form-data">
+            <div class="form__item">
+                <input class="form__email-input" type="email" name="email" placeholder="Email" data-validate-field="email">
+            </div>
+            <div class="form__item form__item-textarea">
+                <textarea class="form__textarea" type="text" name="text" placeholder="Text" data-validate-field="text"></textarea>
+            </div>
+            <button class="form__batton-send _animBtn" type="submit">Send</button>
+        </form>
+        <div class="send__load">
+            <div class="sendload__container">
+                <h2> Sending... </h2>
+            </div>
+        </div>
+    </div>
+</div>

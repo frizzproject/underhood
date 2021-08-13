@@ -1,0 +1,112 @@
+.preloader {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    font-family: $ff;
+    font-weight: 900;
+    font-size: 100px;
+    z-index: 10000;
+    pointer-events: none;
+    transition: all .3s cubic-bezier(.51,.36,.73,.61);
+}
+
+.preloader__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 90px 20px;
+}
+
+.preloader__progressbar {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    height: 7px;
+    margin-top: 40px;
+    background: rgb(70, 70, 70);
+    transition: all .3s;
+    @media (max-width: 767px) {
+        margin-top: 30px;
+        max-width: 80%;
+        height: 5px;
+        height: px;
+    }
+    @media (max-width: 480px) {
+        margin-top: 20px;
+        max-width: 90%;
+        height: 4px;
+    }
+    &-line {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        transition: all .3s;
+    }
+    &-text {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        font-size: 16px;
+        transition: all .3s;
+        @media (max-width: 480px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.preloader__title {
+    display: block;
+    max-width: 100%;
+    font-family: $ff;
+    font-size: $h1-fz;
+    line-height: $h1-lh;
+    letter-spacing: 2px;
+    text-align: center;
+    @media (max-width: 767px) {
+        $h1-fz: 64px;
+        $h1-lh: 64px;
+        font-size: $h1-fz;
+        line-height: $h1-lh;
+    }
+    @media (max-width: 480px) {
+        $h1-fz: 48px;
+        $h1-lh: 48px;
+        font-size: $h1-fz;
+        line-height: $h1-lh;
+    }
+    @media (max-width: 375px) {
+        $h1-fz: 36px;
+        $h1-lh: 36px;
+        font-size: $h1-fz;
+        line-height: $h1-lh;
+    }
+}
+
+.preloader__img {
+    max-width: 600px;
+    @media (max-width: 480px) {
+        max-width: 80%;
+    }
+}
+
+._load {
+    overflow: hidden;
+}

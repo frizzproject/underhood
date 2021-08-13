@@ -1,0 +1,203 @@
+.philosophy-section {
+    width: inherit;
+    padding: 90px 0 90px 0;
+    background: #fff;
+}
+
+.philosophy__content {
+    height: 100%;
+    padding: 0 20px;
+}
+
+.philosophy__title {
+    font-family: $ff;
+    font-size: $h1-fz;
+    line-height: $h1-lh;
+    font-weight: 900;
+    color: #000;
+    text-align: center;
+    @media (max-width: 900px) {
+        $h1-fz: 64px;
+        $h1-lh: 64px;
+        font-size: $h1-fz;
+        line-height: $h1-lh;
+    }
+    @media (max-width: 480px) {
+        $h1-fz: 48px;
+        $h1-lh: 48px;
+        font-size: $h1-fz;
+        line-height: $h1-lh;
+    }
+    @media (max-width: 375px) {
+        $h1-fz: 42px;
+        $h1-lh: 42px;
+        font-size: $h1-fz;
+        line-height: $h1-lh;
+    }
+}
+
+.philosophy__slide-text {
+    font: $text_font $ff;
+    color: #000;
+    @media (max-width: 1280px) {
+        $text_font: 900 22px/30px;
+        font: $text_font $ff;
+        padding: 0 20px;
+    }
+}
+
+.philosophy__slider {
+    padding: 100px 0 160px 0 !important;
+    @media (max-width: 767px) {
+        padding: 90px 0 120px 0 !important;
+    }
+    @media (max-width: 480px) {
+        padding: 50px 0 100px 0 !important;
+    }
+    @media (max-width: 375px) {
+        padding: 50px 0 80px 0 !important;
+    }
+}
+
+.philosophy__slide {
+    position: relative;
+    padding: 200px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-text {
+        text-align: center;
+        max-width: 555px;
+    }
+    @media (max-width: 1280px) {
+        padding: 150px 0;
+    }
+}
+
+.philosophy__pagination {
+    left: 0 !important;
+    width: 100% !important;
+    height: 0 !important;
+    bottom: 39px !important;
+    background: transparent !important;
+    text-align: center;
+    @media (max-width: 480px) {
+        bottom: 34px !important;
+    }
+    @media (max-width: 375px) {
+        bottom: 30px !important;
+    }
+}
+
+.philosophy__slide-prev, .philosophy__slide-next {
+    top: inherit !important;
+    bottom: 0px !important;
+    width: 56px !important;
+    height: 56px !important;
+    &::after {
+        display: none !important;
+    }
+    &:hover path {
+        fill: #B937B2;
+    }
+    @media (max-width: 767px) {
+        width: 48px !important;
+        height: 48px !important;
+    }
+    @media (max-width: 480px) {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    @media (max-width: 375px) {
+        width: 35px !important;
+        height: 35px !important;
+    }
+}
+
+.philosophy__slide-prev svg  path {
+    transition: all .3s;
+}
+.philosophy__slide-next  svg  path {
+    transition: all .3s;
+}
+
+.philosophy__slide-prev {
+    left: 35% !important;
+    @media (max-width: 1280px) {
+        left: 25% !important;
+    }
+    @media (max-width: 900px) {
+        left: 15% !important;
+    }
+    @media (max-width: 767px) {
+        left: 10% !important;
+    }
+    @media (max-width: 480px) {
+        left: 0% !important;
+    }
+}
+
+.philosophy__slide-next {
+    right: 35% !important;
+    @media (max-width: 1280px) {
+        right: 25% !important;
+    }
+    @media (max-width: 900px) {
+        right: 15% !important;
+    }
+    @media (max-width: 767px) {
+        right: 10% !important;
+    }
+    @media (max-width: 480px) {
+        right: 0% !important;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 50px !important;
+    height: 2px !important;
+    border-radius: 0 !important;
+    margin: 0 5px !important;
+    @media (max-width: 767px) {
+        width: 30px !important;
+    }
+    @media (max-width: 480px) {
+        width: 25px !important;
+    }
+    @media (max-width: 375px) {
+        width: 20px !important;
+        margin: 0 4px !important;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background: $active_color !important;
+}
+
+.slide__border {
+    position: absolute;
+}
+
+.slide__border-left {
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.slide__border-right {
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.slide__border-top {
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.slide__border-bottom {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
