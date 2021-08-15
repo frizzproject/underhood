@@ -13,5 +13,5 @@
 
 Сcылка на GitHub Pages: https://frizzproject.github.io/Underhood/
 
-![Preview](https://user-images.githubusercontent.com/68475358/129495624-5fbc6d31-8f13-4d17-80e8-c37b6672f677.png)
+![Preview](https://user-images.githubusercontent.com/68475358/129495643-004b142d-44a0-4518-8994-eea7d4bedd2b.png)
 
